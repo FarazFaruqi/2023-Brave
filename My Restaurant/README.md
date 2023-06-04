@@ -1,29 +1,33 @@
-# personalSite Version 3
+# Brave 2023
+## Mini Projects
 
-## Lesson Focus:
-- practice flex box by adding a footer using the same styling as the nav bar
-- [changes from version 2](https://github.com/bravecourse/personalSite/commit/2658795f71ffa5098e25eae57ba4f05a3269d15f)
+This repository contains the code for two mini projects demonstrated in the Brave Behind Bars 2023 class. 
 
-## Lesson Steps:
-### IN HTML
-1. Add a footer tag
-2. Add a div tag with the class "company-info"
-3. Add a div tag with the class "contact-info"
-4. Add a div tag with the class "footer-links"
-5. Add h3 and p tags with info in company-info and contact-info
-6. Add an unordered list with the nav bar info in footer-links
-### IN CSS
-7. use the same styling as the nav bar (flex box) to style the footer
+There are two mini projects here: 
+- My Restaurant
+- My Personal Portfolio
 
-## HTML Tags Used:
-- footer
+### My Restaurant
+This mini project is geared towards teaching students the basics of HTML / CSS. 
+The TAs can use this code as a scaffolding to allow students to play around with functionality, such as: 
+- Changing the heading attributes
+- Changing CSS attributes for font
+- Exploring functionality with backgrounds
+- Using lists on a webpage
+- And more... 
 
-## CSS Used:
-- display: flex
-- justify-content: space-evenly
-- text decoration: none
-- list-style: none
-- background-color
-- color
-- margin
-- padding
+
+### My Personal Portfolio
+Starting Week 3, students will work on their HTML CSS skills to develop a Personal Portfolio website. 
+We have prepared this demo website that I will build from scratch in class to showcase the process. 
+The TAs can use this code themselves, but allow the students to start from scratch, and design the website in their own desired style. 
+
+
+### Javascript
+In Week 4, students will start experimenting with Javascript. The goal is to teach the following concepts: 
+- Variables
+- Branching Statements
+- Loops
+- Functions
+
+Here, we will store scaffolding code that the students can use to experiment with basic Javascript functionality. 
