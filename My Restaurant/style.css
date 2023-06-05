@@ -54,7 +54,8 @@ nav ul li {
 footer {
 	display: flex;
 	justify-content: space-between;
-	background-color: grey;
+	/* background:transparent; */
+	border-top: 2px dashed #d7d7d7;
 	color:  white;
 	padding: 25px;
 }
