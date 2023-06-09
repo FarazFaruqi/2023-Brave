@@ -1,0 +1,111 @@
+:root {
+}
+
+p {
+  font-size: large;
+}
+
+body {
+  background-color: black;
+  color: white;
+  margin: 1em;
+}
+
+.debug {
+  /* visibility: hidden; */
+}
+
+/* Work in progress */
+.code {
+  font-family: Monaco, monospace;
+  background-color: #ffe4bc;
+  padding: 0.2em;
+  letter-spacing: -0.05em;
+  word-break: normal;
+}
+
+.answer-correct {
+  background: LightGreen;
+}
+
+.answer-incorrect {
+  background: LightPink;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  color: rgb(107, 107, 107);
+  /* align-items: stretch; */
+  /* justify-content: center; */
+  /* width: 100vh; */
+}
+
+.menu-bar {
+  display: flex;
+  flex-direction: row;
+}
+
+.game-display {
+  margin: 5px;
+  flex-basis: 40vh;
+}
+
+.game-menu {
+  margin: 5px;
+  flex-basis: 5vh;
+}
+
+.game-control {
+  margin: 5px;
+  flex: 1;
+}
+
+.game-text {
+  height: 200px;
+  border: 2px;
+  border-color: azure;
+  border-style: solid;
+  padding: 10px;
+}
+
+#game-display {
+  display: flex;
+  justify-content: space-around;
+}
+
+.button-submit {
+  /* text-align: center;
+    display: inline-block;
+    width: fit-content; */
+  background-color: aliceblue;
+  border: 2px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 2px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.button-submit:hover {
+  background-color: rgba(240, 248, 255, 0.849);
+}
+
+.button-menu {
+  flex-grow: 1;
+  background-color: aliceblue;
+  border: 2px;
+  border-style: solid;
+  border-color: gray;
+  border-radius: 2px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.button-menu:hover {
+  background-color: rgba(240, 248, 255, 0.849);
+}
+
+.button-menu:disabled {
+  background-color: rgba(240, 248, 255, 0.438);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="adventure.css" />
+  <head>
+    <title>Space Adventure</title>
+  </head>
+  <body onload="page_load();">
+    <div class="container">
+      <div class="game-display">
+        <div class="debug">Game Display</div>
+        <div id="game-display"></div>
+      </div>
+      <div class="game-menu">
+        <div class="debug">Game Menu</div>
+        <div class="menu-bar">
+          <button class="button button-menu" disabled id="menu1">
+            Step 1
+          </button>
+          <button class="button button-menu" disabled id="menu2">
+            Step 2
+          </button>
+          <button class="button button-menu" disabled id="menu3">
+            Step 3
+          </button>
+        </div>
+      </div>
+      <div class="game-control">
+        <div class="debug">Game Control</div>
+        <div id="game-text"></div>
+        <div id="game-message">.</div>
+        <button class="button button-submit" onclick="evaluate_answers()">
+          Check Step
+        </button>
+        <button class="button button-submit" onclick="restart()">
+          Restart
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="adventure.js"></script>
+<script src="student_answers.js"></script>

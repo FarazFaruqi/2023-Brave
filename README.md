@@ -30,4 +30,6 @@ In Week 4, students will start experimenting with Javascript. The goal is to tea
 - Loops
 - Functions
 
-Here, we will store scaffolding code that the students can use to experiment with basic Javascript functionality. 
+The Javascript activity has the students complete a game called "Space Adventure". The basic functionality and control of the game is provided; students complete function stubs in `student_answers.js` to progress. Other files (`adventure.[css|html|js]`) are provided to the students, implementing the game control and task verification.
+
+To play, open `adventure.html` in a browser and read the displayed instructions. Students will need to refresh their browser to load changes to `student_answers.js`, but the game will persist progress through local storage.
