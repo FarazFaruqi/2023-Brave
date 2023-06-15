@@ -6,22 +6,60 @@ p {
 }
 
 body {
-  background-color: black;
+  background-color: #3B3B3B;
   color: white;
   margin: 1em;
 }
 
 .debug {
-  /* visibility: hidden; */
+  visibility: hidden;
 }
 
 /* Work in progress */
 .code {
   font-family: Monaco, monospace;
   background-color: #ffe4bc;
-  padding: 0.2em;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  margin-left: 0.1em;
   letter-spacing: -0.05em;
   word-break: normal;
+  border-radius: 4px;
+}
+
+.svg {
+  margin-top: 2em;
+  margin-left: 5em;
+  margin-right: 5em;
+  margin-bottom: 2em;
+}
+
+.filter-red {
+filter: invert(21%) sepia(73%) saturate(2992%) hue-rotate(344deg) brightness(90%) contrast(117%);
+}
+
+.filter-orange {
+  filter: invert(64%) sepia(77%) saturate(2200%) hue-rotate(1deg) brightness(104%) contrast(107%);
+}
+
+.filter-yellow {
+  filter: invert(91%) sepia(94%) saturate(877%) hue-rotate(328deg) brightness(111%) contrast(96%);
+}
+
+.filter-green {
+filter: invert(61%) sepia(90%) saturate(419%) hue-rotate(41deg) brightness(91%) contrast(95%);
+}
+
+.filter-blue {
+filter: invert(51%) sepia(32%) saturate(1089%) hue-rotate(183deg) brightness(89%) contrast(105%);
+}
+
+.filter-indigo {
+  filter: invert(22%) sepia(15%) saturate(7329%) hue-rotate(235deg) brightness(94%) contrast(94%);
+}
+
+.filter-violet {
+  filter: invert(26%) sepia(34%) saturate(2666%) hue-rotate(248deg) brightness(90%) contrast(94%);
 }
 
 .answer-correct {
@@ -38,6 +76,15 @@ body {
   color: rgb(107, 107, 107);
   /* align-items: stretch; */
   /* justify-content: center; */
+  /* width: 100vh; */
+}
+
+.container-row {
+  display: flex;
+  flex-direction: row;
+  color: rgb(107, 107, 107);
+  align-items: center;
+  justify-content: space-evenly;
   /* width: 100vh; */
 }
 
@@ -67,11 +114,13 @@ body {
   border-color: azure;
   border-style: solid;
   padding: 10px;
+  overflow: auto;
 }
 
 #game-display {
   display: flex;
   justify-content: space-around;
+  align-items: center;
 }
 
 .button-submit {
@@ -108,4 +157,14 @@ body {
 
 .button-menu:disabled {
   background-color: rgba(240, 248, 255, 0.438);
+}
+
+.border-box {
+  border-radius: 2px;
+  border-style: double;
+  border-width: 5px;
+}
+
+li {
+  margin: 0.5em;
 }

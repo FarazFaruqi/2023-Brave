@@ -17,15 +17,20 @@ function step1(event) {
   var planet = event.srcElement.id;
 
   // TODO: Print the id of the planet to the console using 'console.log()'
+  console.log(planet);
 
   // TODO: Alert the visitor with a message about which planet was clicked using 'alert()'
   // Challenge TODO: Update this code to display the planet's label text in this alert (instead of the planet id)
+  const message = "You have clicked on ";
+  alert(message + planet);
+  // Challenge
+  alert(message + document.getElementById(planet + "-label").innerText);
 
   // TODO: Prompt the user for a new name for the planet they clicked and update the displayed name using 'prompt()'
   // Info: The planet label id's are 'venus-label', 'earth-label', and 'neptune-label'
   const label = planet + "-label";
-  var new_name; /* Complete code here */
-  document.getElementById(label).innerText; /* Complete code here */
+  var new_name = prompt("What should this planet be called?");
+  document.getElementById(label).innerText = new_name;
 }
 
 /*
@@ -40,21 +45,25 @@ Returns:
 function step2() {
   // TODO: Find the element id of the astronaut picture, and update the getElementById() function
   // Hint: Use the 'inspect' feature in your browser
-  var img = document.getElementById("");
+  var img = document.getElementById("astronaut"); //getElementById('');
 
   // TODO: Declare another variable and store the value of the 'Height' input box in it
-  /* Complete code here = document.getElementById("size-height").value; */
+  var height = document.getElementById("size-height").value;
 
   // TODO: Declare a variable (use a descriptive name) and store the value of the 'Width' input box in it
-  // Hint: Use the '.value' attribute
+  // /* Declare Variable */ = document.getElementById('size-width').value;
+  var width = document.getElementById("size-width").value;
 
   // TODO: Update the width of the astronaut picture with the inputted width
-  img.height; /* Complete code here */
+  img.height = height;
 
   // TODO: Update the height of the astronaut picture with the inputted width
+  img.width = width;
 
   // Challenge TODO: The desired final picture has a height/width ratio of 2/3
   //                  Instead of manually inputting a value for 'Height', calculate a value based on 'Width' and this ratio
+  var calc_width = (height * 2) / 3;
+  img.width = calc_width;
 }
 
 /*
@@ -70,25 +79,35 @@ Returns:
 function step3_border_color() {
   // TODO: Find the element id of the astronaut picture border, and update the getElementById() function
   // Hint: Use the 'inspect' feature in your browser
+  const border = document.getElementById("border");
 
   // TODO: Find the element id of the color display box and store it in a variable
+  const color_picked = document.getElementById("color-label");
 
   // TODO: Define a variable for your border color, and prompt the user for a color
   // Hint: Find the colors you can use here - https://www.w3schools.com/tags/ref_colornames.asp
+  const border_color = prompt("Enter a color");
 
   // TODO: Set the border color to what the user entered
-  border.style.borderColor; /* Complete code here*/
+  border.style.borderColor = border_color;
 
   // TODO: Update the color label with the name of the color chosen
-  color_picked.innerText; /* Complete code here*/
+  color_picked.innerText = border_color;
 
   // Challenge TODO: Update the background of the color label with the color chosen
-  // Hint: Try the .backgroundColor attribute
+  color_picked.style.backgroundColor = border_color;
 }
 
 function step3_border_name() {
   // TODO: Find the element id of the astronaut name label and store it in a variable
+  const astro_name = document.getElementById("astronaut-name");
+
   // TODO: Find the element id of the astronaut name input box and store it as a variable
+  const astro_input = document.getElementById("name-input");
+
   // Update the astronaut's name label with the value entered in the input box
-  // Challenge TODO: Add a prefix or other stylization to the astronaut's label
+  astro_name.innerText = astro_input.value;
+
+  // Challenge TODO: Add a prefix (like 'CAPTAIN') or other stylization to the astronaut's label
+  astro_name.innerText = 'CAPT ' + astro_input.value;
 }
