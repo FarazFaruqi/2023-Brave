@@ -1,30 +1,42 @@
-:root {
-}
-
-p {
+p, li {
   font-size: large;
+  color: white;
 }
 
 body {
   background-color: #3B3B3B;
   color: white;
   margin: 1em;
+  /* background-image: url('assets/background.jpg'); */
+}
+
+table, tr, th {
+  border: 1px solid white;
+  padding: 0.5em;
+}
+
+.number {
+  font-weight: unset;
+}
+
+img {
+  padding: 10px;
 }
 
 .debug {
   visibility: hidden;
 }
 
-/* Work in progress */
-.code {
+code {
   font-family: Monaco, monospace;
-  background-color: #ffe4bc;
-  padding-left: 0.1em;
-  padding-right: 0.1em;
-  margin-left: 0.1em;
-  letter-spacing: -0.05em;
-  word-break: normal;
-  border-radius: 4px;
+  font-size: medium;
+  color: crimson;
+  background-color: #d9d9d9;
+  padding: 0.2em;
+  padding-bottom: 0.1em;
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  border-radius: 3px;
 }
 
 .svg {
@@ -62,21 +74,44 @@ filter: invert(51%) sepia(32%) saturate(1089%) hue-rotate(183deg) brightness(89%
   filter: invert(26%) sepia(34%) saturate(2666%) hue-rotate(248deg) brightness(90%) contrast(94%);
 }
 
+.filter-white {
+  filter: invert(100%) sepia(0%) saturate(28%) hue-rotate(125deg) brightness(106%) contrast(108%);
+}
+
+.filter-platinum {
+  filter: invert(97%) sepia(4%) saturate(3396%) hue-rotate(298deg) brightness(113%) contrast(81%);
+}
+
 .answer-correct {
   background: LightGreen;
+  color: white;
+  font-size: large;
+  padding: 0.5em;
 }
 
 .answer-incorrect {
   background: LightPink;
+  color: white;
+  font-size: large;
+  padding: 0.5em;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  color: rgb(107, 107, 107);
+  /* color: rgb(107, 107, 107); */
   /* align-items: stretch; */
   /* justify-content: center; */
   /* width: 100vh; */
+}
+
+.container-item {
+  display: flex;
+  flex-direction: column;
+  color: rgb(107, 107, 107);
+  align-items: center;
+  margin: 1em;
+  min-height: 100px;
 }
 
 .container-row {
@@ -119,8 +154,13 @@ filter: invert(51%) sepia(32%) saturate(1089%) hue-rotate(183deg) brightness(89%
 
 #game-display {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
+}
+
+#game-message {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .button-submit {
@@ -163,6 +203,14 @@ filter: invert(51%) sepia(32%) saturate(1089%) hue-rotate(183deg) brightness(89%
   border-radius: 2px;
   border-style: double;
   border-width: 5px;
+}
+
+.todo-box {
+  background-color:rgba(228, 232, 235, 0.473);
+  margin: 0.25em;
+  padding: 0.25em;
+  padding-left: 0.5em;
+  border-radius: 0.5em;
 }
 
 li {

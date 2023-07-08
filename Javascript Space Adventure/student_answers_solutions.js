@@ -111,3 +111,159 @@ function step3_border_name() {
   // Challenge TODO: Add a prefix (like 'CAPTAIN') or other stylization to the astronaut's label
   astro_name.innerText = 'CAPT ' + astro_input.value;
 }
+
+/*
+Step 4: Cargo Bay Items
+
+Arguements:
+ None
+
+Returns:
+ None
+*/
+// Step 4:
+function step4() {
+
+  // This function moves a cargo item from the Launch Pad to the Cargo Bay
+  function moveItem(id) {
+    const cargo_bay = document.getElementById('cargo-bay');
+    cargo_bay.appendChild(document.getElementById('_'+id));
+  }
+
+  const cargo_items = ['drone','rover','scout','telescope'];
+
+  // Use a 'for' loop to go through each item in the manifest and move it to the cargo bay
+  // TODO: Setup the maximum number of items
+  var item_count = cargo_items.length;
+
+  // TODO: Use the 'moveItem' function to move each item.
+  //  Note: The item name itself is the arguement to the function, not the index
+  for(let i = 0; i < item_count; i++)
+  {
+    moveItem(cargo_items[i]);
+  }
+}
+
+/*
+Step 5: Green Cargo Bay Items
+
+Arguements:
+ None
+
+Returns:
+ None
+*/
+// Step 5:
+function step5() {
+
+  // This function moves a cargo item from the Launch Pad to the Cargo Bay
+  function moveItem(id) {
+    const cargo_bay = document.getElementById("cargo-bay");
+    cargo_bay.appendChild(document.getElementById("_" + id));
+  }
+
+  // This function checks if an item should be taken by checking its color (green items should be taken)
+  //  Returns true if item should be taken, returns false if item should be left behind
+  function shouldTake(id) {
+    return document.getElementById(id).classList.contains("filter-green");
+  }
+
+  cargo_items = [
+    "capsule",
+    "lander",
+    "parachute",
+    "radar",
+    "astronaut",
+    "rocket",
+  ];
+
+  // Use a 'for' loop to go through each item in the manifest and move it to the cargo bay
+  // TODO: Setup the maximum number of items
+  var item_count = cargo_items.length;
+
+  // TODO: Check each item using 'shouldTake()' and move the ones that return 'true' using 'moveItem()'
+  //  Note: The item name itself is the arguement to the function, not the index
+  for (let i = 0; i < item_count; i++) {
+    if (shouldTake(cargo_items[i])) moveItem(cargo_items[i]);
+  }
+}
+
+/*
+Step 6: Voyage
+
+Arguements:
+ None
+
+Returns:
+ Array of planets to visit as planet numbers
+
+Example:
+ [4, 6, 3] represents [Mars -> Saturn -> Earth]
+*/
+function step6(){
+  // Declare an array to hold the stops
+  var trip = [];
+  // Iterate through each stop selector
+  for(let i = 1; i < 10; i++){
+    const stop_selector = document.getElementById('_stop'+i);
+    // Skip the stop if it hasn't been changed from the default value
+    if(stop_selector.value != '---'){
+      // TODO: Add the stop to the array
+      trip.push(planet_number(stop_selector.value));
+    }
+  }
+  // TODO: Return the array
+  return trip;
+}
+
+/*
+Step 6: Planet Number
+
+Arguements:
+ planet - text name of planet
+
+Returns:
+ planet number (Mercury: 1, Venus: 2, Earth: 3, etc)
+*/
+function planet_number(planet)
+{
+  switch (planet.toLowerCase()) {
+    case "mercury":
+      return 1;
+    case "venus":
+      return 2;
+    case "earth":
+      return 3;
+    case "mars":
+      return 4;
+    case "jupiter":
+      return 5;
+    case "saturn":
+      return 6;
+    case "uranus":
+      return 7;
+    case "neptune":
+      return 8;
+  }
+}
+
+/*
+Step 6: Distance Calculator
+
+Arguements:
+ origin - text name of origin planet
+ destination - text name of destination planet
+
+Returns:
+ Distance between origin and destination (in AU)
+*/
+// distance_calculator(origin, destination)
+function distance_calculator(origin, destination)
+{
+  const distances = [0.4, 0.7, 1.0, 1.5, 5.2, 9.5, 19.2, 30.1];
+
+  return Math.abs(
+    distances[planet_number(origin) - 1] - distances[planet_number(destination) - 1]
+  );
+
+}
