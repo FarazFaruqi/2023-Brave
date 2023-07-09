@@ -1,18 +1,56 @@
-p, li {
-  font-size: large;
+:root {
+  --dark-blue: #101b39;
+  --dark-grey: #333136;
+  --medium-grey: #6f6d72;
+  --light-grey: #b4b1b8;
+  --white-grey: #e9e8ee;
+}
+
+html {
+  background: url('assets/moon.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+p {
+  font-size: larger;
+  font-family: Arial, Helvetica, sans-serif;
   color: white;
+  line-height: 1.5em;
+}
+
+li {
+  margin: 0.5em;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  line-height: 1.5em;
+}
+
+h1, h2 {
+  display: flex;
+  justify-content: center;
 }
 
 body {
-  background-color: #3B3B3B;
+  background-color: rgba(16,27,57,.85); /* dark blue */
   color: white;
   margin: 1em;
-  /* background-image: url('assets/background.jpg'); */
+  border-radius: 1em;
+  padding: 1em;
 }
 
 table, tr, th {
   border: 1px solid white;
   padding: 0.5em;
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+input:disabled{
+  color: black;
+  background-color: white;
 }
 
 .number {
@@ -31,7 +69,7 @@ code {
   font-family: Monaco, monospace;
   font-size: medium;
   color: crimson;
-  background-color: #d9d9d9;
+  background-color: #e4e2e2;
   padding: 0.2em;
   padding-bottom: 0.1em;
   margin-left: 0.2em;
@@ -83,14 +121,14 @@ filter: invert(51%) sepia(32%) saturate(1089%) hue-rotate(183deg) brightness(89%
 }
 
 .answer-correct {
-  background: LightGreen;
+  background: rgb(11, 164, 11);
   color: white;
   font-size: large;
-  padding: 0.5em;
+  padding: 0.3em;
 }
 
 .answer-incorrect {
-  background: LightPink;
+  background: rgb(255, 107, 107);
   color: white;
   font-size: large;
   padding: 0.5em;
@@ -164,13 +202,12 @@ filter: invert(51%) sepia(32%) saturate(1089%) hue-rotate(183deg) brightness(89%
 }
 
 .button-submit {
-  /* text-align: center;
-    display: inline-block;
-    width: fit-content; */
-  background-color: aliceblue;
+  color: black;
+  font-size: medium;
+  background-color: var(--white-grey);
   border: 2px;
   border-style: solid;
-  border-color: gray;
+  border-color: var(--dark-blue);
   border-radius: 2px;
   padding: 5px;
   cursor: pointer;
@@ -182,10 +219,12 @@ filter: invert(51%) sepia(32%) saturate(1089%) hue-rotate(183deg) brightness(89%
 
 .button-menu {
   flex-grow: 1;
-  background-color: aliceblue;
+  color: black;
+  font-size: medium;
+  background-color: var(--white-grey);
   border: 2px;
   border-style: solid;
-  border-color: gray;
+  border-color: var(--dark-blue);
   border-radius: 2px;
   padding: 5px;
   cursor: pointer;
@@ -213,6 +252,3 @@ filter: invert(51%) sepia(32%) saturate(1089%) hue-rotate(183deg) brightness(89%
   border-radius: 0.5em;
 }
 
-li {
-  margin: 0.5em;
-}
