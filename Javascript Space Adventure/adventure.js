@@ -126,7 +126,7 @@ const payload = {
       <li><b>Challenge: </b> Add a stylization (such as 'Ms', 'Mr', 'Capt') to the displayed name</li></ul> \
       </ul> \
       <div class='container-row' style='justify-content:flex-start;'> \
-      <p><b>Color Picked:</b></p><span id='color-label' class='border-box' style='border-style:solid;border-width:2px;min-width:100px;min-height:20px;margin-left:10px;margin-right:10px;padding-right:5px;padding-left:5px;'></span> \
+      <p><b>Color Picked:</b></p><span id='color-label' class='border-box' style='color:white;border-style:solid;border-width:2px;min-width:100px;min-height:20px;margin-left:10px;margin-right:10px;padding-right:5px;padding-left:5px;'></span> \
       </div> \
       <div class='container-row' style='justify-content:flex-start;'> \
       <p><b>Astronaut Name:</b><input id='name-input' style='min-width:100px;min-height:20px;margin-left:10px;margin-right:10px;padding-right:5px;padding-left:5px;'></input></p> \
@@ -499,13 +499,15 @@ function get_step() {
 }
 
 function store_astronaut() {
+  // Saves on step 2
   const img = document.getElementById("astronaut");
-  if (img != null) {
+  const width_input = document.getElementById('size-width');
+  if (width_input != null) {
     localStorage.setItem("a-height", img.height);
     localStorage.setItem("a-width", img.width);
     localStorage.setItem("a-passing", verifier(2));
   }
-
+  // Saves on step 3
   const name_lbl = document.getElementById("astronaut-name");
   if (name_lbl != null) {
     localStorage.setItem("a-name", name_lbl.innerText);

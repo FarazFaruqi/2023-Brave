@@ -81,7 +81,8 @@ function step3_border_color() {
   border.style.borderColor /* Complete code here*/
 
   // TODO: Update the color label with the name of the color chosen
-  color_picked.innerText /* Complete code here*/
+  // Hint: Try the .innerText attribue
+  /* Complete code here*/
 
   // Challenge TODO: Update the background of the color label with the color chosen
   // Hint: Try the .backgroundColor attribute

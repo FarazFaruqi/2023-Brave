@@ -92,6 +92,7 @@ function step3_border_color() {
   border.style.borderColor = border_color;
 
   // TODO: Update the color label with the name of the color chosen
+  // Hint: Try the .innerText attribue
   color_picked.innerText = border_color;
 
   // Challenge TODO: Update the background of the color label with the color chosen
