@@ -9,7 +9,7 @@ const payload = {
   0: {
     display: "",
     instruction:
-      "<p>Progress through Space Adventure by finishing the code stubs in <code>student_answers.js</code>.</p> \
+      "<p>Progress through Space Adventure by finishing the code stubs in <code>student_answers.js</code>. After you've updated the code, <b>refresh this webpage</b> for your changes to be loaded.</p> \
       <p>Click 'Check Step' to continue. In the next steps, this button will check your answer and unlock the next step if it is correct.</p> \
       <p>If your answer is not correct, review your code and ask a TA for help if necessary.</p> \
       <p>You can reset the game by clicking the 'Restart' button. This will only reset the game state and will not delete or modify your code.</p>",
