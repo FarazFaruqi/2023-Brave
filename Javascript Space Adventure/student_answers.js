@@ -206,7 +206,7 @@ function step6(){
 /*
 Step 6: Planet Number
 
-Arguements:
+Arguments:
  planet - text name of planet
 
 Returns:
