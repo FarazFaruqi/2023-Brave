@@ -60,7 +60,7 @@ function step2() {
   // TODO: Update the height of the astronaut picture with the inputted width
   img.width = width;
 
-  // Challenge TODO: The desired final picture has a height/width ratio of 2/3
+  // Challenge TODO: The desired final picture has a height/width ratio of 3/2
   //                  Instead of manually inputting a value for 'Height', calculate a value based on 'Width' and this ratio
   var calc_width = (height * 2) / 3;
   img.width = calc_width;
