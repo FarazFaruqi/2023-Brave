@@ -62,8 +62,8 @@ function step2() {
 
   // Challenge TODO: The desired final picture has a height/width ratio of 3/2
   //                  Instead of manually inputting a value for 'Height', calculate a value based on 'Width' and this ratio
-  var calc_height = (width * 2) / 3;
-  img.height = calc_height;
+  var calc_width = (height * 2) / 3;
+  img.width = calc_width;
 }
 
 /*
