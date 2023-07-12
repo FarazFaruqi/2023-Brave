@@ -6,7 +6,7 @@
 /*
 Step 1: Getting started
 
-Arguements:
+Arguments:
  event: context information from the element that was clicked
 
 Returns:
@@ -36,7 +36,7 @@ function step1(event) {
 /*
 Step 2: Astronaut ID (Picture Size)
 
-Arguements:
+Arguments:
  None
 
 Returns:
@@ -54,22 +54,22 @@ function step2() {
   // /* Declare Variable */ = document.getElementById('size-width').value;
   var width = document.getElementById("size-width").value;
 
-  // TODO: Update the width of the astronaut picture with the inputted width
+  // TODO: Update the height of the astronaut picture with the inputted height
   img.height = height;
 
-  // TODO: Update the height of the astronaut picture with the inputted width
+  // TODO: Update the width of the astronaut picture with the inputted width
   img.width = width;
 
   // Challenge TODO: The desired final picture has a height/width ratio of 3/2
   //                  Instead of manually inputting a value for 'Height', calculate a value based on 'Width' and this ratio
-  var calc_width = (height * 2) / 3;
-  img.width = calc_width;
+  var calc_height = (width * 2) / 3;
+  img.height = calc_height;
 }
 
 /*
 Step 3: Astronaut ID (Border Style and Name)
 
-Arguements:
+Arguments:
  None
 
 Returns:
@@ -116,7 +116,7 @@ function step3_border_name() {
 /*
 Step 4: Cargo Bay Items
 
-Arguements:
+Arguments:
  None
 
 Returns:
@@ -148,7 +148,7 @@ function step4() {
 /*
 Step 5: Green Cargo Bay Items
 
-Arguements:
+Arguments:
  None
 
 Returns:
@@ -192,7 +192,7 @@ function step5() {
 /*
 Step 6: Voyage
 
-Arguements:
+Arguments:
  None
 
 Returns:
@@ -220,7 +220,7 @@ function step6(){
 /*
 Step 6: Planet Number
 
-Arguements:
+Arguments:
  planet - text name of planet
 
 Returns:
@@ -251,7 +251,7 @@ function planet_number(planet)
 /*
 Step 6: Distance Calculator
 
-Arguements:
+Arguments:
  origin - text name of origin planet
  destination - text name of destination planet
 
