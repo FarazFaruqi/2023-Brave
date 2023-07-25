@@ -1,7 +1,7 @@
 
 body {
 	background: #1b1b63;
-	overflow: scroll;
+	overflow: scroll !important;
 	height: 100vh;
 }
 
