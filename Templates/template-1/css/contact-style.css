@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+body {
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background: #11a5df2b; */
+    width: 80vw;
+    padding: 15px;
+}
+
+h2 {
+    color: #403333;
+}
+
+.contact-info {
+    display: flex;
+    width: 90%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    box-shadow: 0 0 15px grey;
+    text-align: center;
+    color: gray;
+    border-radius: 5px;
+    padding: 7px;
+
+}
+
+.details {
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    background: #0069f7;
+    color: white;
+    border-radius: 5px;
+    padding: 7px;
+    box-shadow: 0 0 15px rgb(46, 119, 196);
+
+}
+.contact-items{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    /* margin-left: 5px; */
+}
+.contact-items-wrapper{
+    padding: 25px;
+}
+
+.details h3 {
+    text-align: center;
+}
+
+.details p {
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.details p a{
+color: white;
+}
+.details p a:hover{
+color: rgb(160, 154, 154);
+}
+
+.material-icons{
+    width: 12px;
+    margin: 5px;
+}
+
+input {
+    margin: 5px 15px;
+    height: 25px;
+}
+
+textarea {
+    height: 150px;
+    margin: 5px 15px;
+}
+
+button {
+    margin: 5px 15px;
+    width: 80px;
+    background: #0069f7;
+    padding: 3px 10px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+}
+             
+@media screen and (max-width:780px) {
+    .contact-info {
+    flex-direction: column;
+    width: 90%;
+}
+form{
+    width: 100%;
+    margin-bottom: 5px;
+}
+.details{
+    width: 100%;
+}
+}

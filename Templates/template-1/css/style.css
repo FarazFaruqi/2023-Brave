@@ -1,0 +1,305 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+  background: #a6a2a221;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+  margin: auto;
+  background: #e6e6e6;
+  /* position: sticky;
+    top: 0; */
+}
+
+.nav-bar img {
+  margin-left: 10px;
+  width: 60px;
+  height: 60px;
+  border: 0;
+  border-radius: 25px;
+}
+.nav-bar a {
+  text-decoration: none;
+  margin: 2px 15px;
+  color: #013287;
+  font-size: 21px;
+  font-weight: normal;
+}
+
+.nav-bar a:hover {
+  color: #31d8ba;
+  text-shadow: 0 0 1px blue;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 22px;
+  right: 22px;
+  display: none;
+}
+
+.slider:hover div {
+  background: black;
+}
+
+.slider div {
+  background: #605c5c;
+  width: 35px;
+  height: 5px;
+  border-radius: 19px;
+  margin: 1px;
+}
+
+.main {
+  padding: 15px;
+}
+
+.image-slider {
+  width: 95vw;
+  height: 800px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 5px grey;
+  overflow: hidden;
+}
+
+.image-slider img {
+  width: 100%;
+  height: 100%;
+}
+
+.tag-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 95%;
+  position: relative;
+  left: 0;
+  height: 150px;
+  margin: 25px auto;
+  padding: 5px;
+  background: #e6e6e6;
+  font-size: 30px;
+  text-align: center;
+  box-shadow: 0 0 5px grey;
+}
+
+
+.mission-statement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  font-size: 23px;
+}
+
+.mission-item img {
+  height: 40px;
+  width: 40px;
+}
+
+.mission-statement h2 {
+  margin-bottom: 5px;
+}
+
+.recent-projects {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+  font-size: 23px;
+}
+
+.recent-projects h2 {
+  margin-bottom: 5px;
+}
+
+hr {
+  width: 80%;
+}
+
+.project-item-wrapper {
+  display: flex;
+  margin-top: 15px;
+  justify-content: center;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  align-items: center;
+  text-align: center;
+  box-shadow: 0 0 5px grey;
+  padding: 15px;
+  width: 35%;
+}
+
+.project-item img {
+  width: 300px;
+  height: 200px;
+}
+
+.project-item p {
+  font-size: 18px;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15px 0;
+  font-size: 23px;
+}
+
+.team h2 {
+  margin-bottom: 5px;
+}
+
+hr {
+  width: 80%;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  margin-top: 15px;
+  width: 90%;
+  padding: 10px 25px;
+  box-shadow: 0 0 5px grey;
+  justify-content: center;
+}
+
+.member {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  align-items: center;
+  text-align: center;
+}
+
+.member img {
+  width: 180px;
+  height: 180px;
+  border-radius: 180px;
+}
+
+.member p {
+  font-size: 18px;
+}
+
+.footer {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: #e6e6e6;
+  position: absolute;
+  width: 100%;
+  font-size: 15px;
+}
+
+p a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 840px) {
+  .nav-bar a {
+    font-size: 20px;
+  }
+  .tag-line {
+    font-size: 25px;
+  }
+  .recent-projects {
+    font-size: 18px;
+  }
+  .project-item img {
+    width: 250px;
+    height: 180px;
+  }
+  .team-members {
+    grid-template-columns: auto auto;
+  }
+  .team {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .nav-bar a {
+    font-size: 17px;
+  }
+  .project-item-wrapper {
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+  }
+  .project-item {
+    width: 75%;
+  }
+  .project-item img {
+    width: 350px;
+    height: 280px;
+  }
+  .footer {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-bar {
+    flex-direction: column;
+    height: 80px;
+    width: 100%;
+
+    transition: all 0.7s ease-out;
+  }
+  .nav-bar img {
+    height: 75px;
+    width: 85px;
+  }
+  .menu {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+
+  }
+  .slider {
+    display: block;
+  }
+  .show {
+    opacity: 0;
+}
+  .nav-height {
+    height: 170px;
+}
+ 
+  .nav-bar .menu li {
+    margin: 4px;
+  }
+  .project-item img {
+    width: 300px;
+    height: 250px;
+  }
+}
+

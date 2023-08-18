@@ -33,11 +33,22 @@ function changeName() {
   // Step 3.2: Alert the user with the current name 
   // Important Concept: String concatenation: when we use + sign with strings, 
   // the two words get combined. JS is smart enough to differentiate between 3 + 3 = 6, and "3" + "3" = "33"
+
+
   alert("Hello World, my name is " + current_name.innerText + "!")
+
+  
 
   // Step 3.3: Ask the user for a new name. We use a pre-built from JS prompt(), that would generate a pop-up  on the screen. 
   // Whatever the user enters in the text box will be stored in the variable `new_name`
-  var new_name = prompt("What should I change the name to?")
+
+
+
+
+  var new_name = prompt("What is the new name?")
+
+  
+
 
   // Step 3.4: Use console.log() to print the name to the console. 
   // Exercise: verify this prints

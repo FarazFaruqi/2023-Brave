@@ -1,0 +1,25 @@
+h1 {
+	color: blue !important;
+}
+
+.h1_class {
+	color: green  ;
+}
+
+#h1_id {
+	color: violet;
+}
+
+
+.p {
+	color: red;
+}
+
+#p2 {
+	color: blue;
+	font-size: 25px;
+}
+
+#p3 {
+	color: darkorange;
+}

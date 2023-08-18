@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <link rel="stylesheet" href="./css/contact-style.css">
+   
+</head>
+
+<body>
+
+    <div class="nav-bar ">
+        <a href="./index.html"><img src="./img/company-logo.png" alt="logo"></a>
+        <ul class="menu show">
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <div class='btn'></div>
+            <div class='btn'></div>
+            <div class='btn'></div>
+        </div>
+
+    </div>
+    <div class="container">
+        <h2>Get in Touch</h2>
+        <div class="contact-info">
+            <form action="">
+                <h3>Write Us</h3>
+                <input type="text" name="fullname" id="fullname" placeholder="Full Name" required>
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <input type="tel" name="tel" id="tel" placeholder="tel: XXX XXX XXXX" required>
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Your Message Here..."></textarea>
+                <button type="submit">Send</button>
+            </form>
+            <div class="details">
+                <h3>Contact Us</h3>
+                <div class="contact-items-wrapper">
+                    <div class="contact-items">
+                        <span class="material-icons">location_on</span>
+                        <p><strong>Address:</strong> Governador Valadares, Brazil</p>
+                    </div>
+                    <div class="contact-items">
+                        <span class="material-icons">local_phone</span>
+                        <p><strong>Phone:</strong> +1-000-000-000</p>
+                    </div>
+                    <div class="contact-items">
+                        <span class="material-icons">alternate_email</span>
+                        <p><strong>Email:</strong><a href="#"> example@xyz.com</a> </p>
+                    </div>
+                    <div class="contact-items">
+                        <span class="material-icons">public</span>
+                        <p><strong>Website:</strong><a href="./index.html"> www.constructioncompany.com</a></p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <script >
+        let ham = document.querySelector('.hamburger')
+let menu = document.querySelector('.menu')
+let navbar = document.querySelector('.nav-bar')
+
+
+ham.addEventListener('click', event => {
+
+    menu.classList.toggle('show')
+    navbar.classList.toggle('nav-height')
+
+})
+    </script>
+</body>
+
+</html>
